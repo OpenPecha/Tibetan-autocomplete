@@ -82,7 +82,7 @@
     
     var str = document.getElementById("myTextarea").innerHTML.toString();
     while (str.search("༔") > -1) {
-      var txt = str.replace("༔", "");
+      var txt = str.replace("བར་སྟོང་།", "Space");
       document.getElementById("myTextarea").innerHTML = txt;
       str = document.getElementById("myTextarea").innerHTML;
       
