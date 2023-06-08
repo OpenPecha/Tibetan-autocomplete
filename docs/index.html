@@ -81,8 +81,8 @@
   
     
     var str = document.getElementById("myTextarea").innerHTML.toString();
-    while (str.search("༔") > -1) {
-      var txt = str.replace("བར་སྟོང་།", "Space");
+    while (str.search(" ") > -1) {
+      var txt = str.replace("", "");
       document.getElementById("myTextarea").innerHTML = txt;
       str = document.getElementById("myTextarea").innerHTML;
       
@@ -100,7 +100,7 @@
     padding-right: 10px;
     border-radius: 4px;
     margin-right: 6px;
-">\ ཡང་ན། ༔</span>མནན་ན་དག་ཆ་གསར་པ་རང་འགུལ་གྱི་བཀོད་སྒྲིག་བྱ་ཐུབ།</p>
+">བར་སྟོང་། ཡང་ན། space</span>མནན་ན་དག་ཆ་གསར་པ་རང་འགུལ་གྱི་བཀོད་སྒྲིག་བྱ་ཐུབ།</p>
 </div>
 <p class="small" style="text-align:center;">Copyright (c) 2020 <a href="www.monlamit.com">Monlam IT</a></p>
 </html>
