@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+ <html class="no-js" lang="en"> 
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width" />
+
+  <title>auto.js - auto complete with dictionary with ease.</title>
+  
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+       <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="../auto.max.js"></script>
+  
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans|Playfair+Display:400italic|Droid+Sans' rel='stylesheet' type='text/css' />
+
+
+<style>
+  body{
+    font-family: Monlam Uni OuChan1;
+  }
+</style>
+</head>
+<body>
+
+
+     <div class="row page_wrap" style="margin-top:-2px">
+     <!-- page wrap -->
+     <div class="twelve columns">
+      <!-- page wrap -->
+      
+       
+       <div class="row">  
+      
+        <div class="twelve columns header_nav" style="margin-bottom:0; box-shadow: none">
+        
+          <div class="twelve columns">
+          <br><br>
+              
+          </div>
+            
+        </div>
+
+          
+      </div><!-- END Header -->
+
+
+      <div class="heading_dots"><h1 class="heading_supersize"><span style="font-family: Monlam Uni OuChan1;" class="heading_center_bg">རང་འགུལ་ཡིག་འབེབ།</span></h1></div>
+      <div>
+        <div class="text_box">
+
+          <textarea id="myTextarea" style="font-family: Monlam Uni OuChan1;" class="text_area" placeholder="བོད་ཡིག་གཏག་རོགས་གནང་་་!" rows=3></textarea>
+          <div style="text-align: right; font-size: 15px;"><button style="font-family: Monlam Uni Ouchan1;font-size: 15px;background-color: #0b8cff;border: none;border-radius: 5px;padding-top: 3px;width: 100px;color: #fff;" onclick="replaceMytext()">གཙང་བཟོ།</button></div> 
+        </div> 
+        
+      
+      
+      <div class="row"> 
+        
+      
+      
+  </div>
+      
+      
+
+
+  
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var oTextbox = new AutoSuggestControl("myTextarea");        
+    }
+</script>
+<script>
+  function replaceMytext()
+  {
+  
+    
+    var str = document.getElementById("myTextarea").innerHTML.toString();
+    while (str.search("༔") > -1) {
+      var txt = str.replace("༔", "");
+      document.getElementById("myTextarea").innerHTML = txt;
+      str = document.getElementById("myTextarea").innerHTML;
+      
+    }
+  }
+
+  </script>
+<br>
+<div>
+  <p style="font-size: 15px;font-family: Monlam Uni Ouchan1;">བོད་ཡིག་ནང་དག་ཆ་གསར་པ་བཙལ་དགོས་ཚེ། འཛུབ་གནོན་སྡེ་མིག་འདི་། <span style="
+    border: 1px solid #999;
+    background-color: #999;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+">\ ཡང་ན། ༔</span>མནན་ན་དག་ཆ་གསར་པ་རང་འགུལ་གྱི་བཀོད་སྒྲིག་བྱ་ཐུབ།</p>
+</div>
+<p class="small" style="text-align:center;">Copyright (c) 2020 <a href="www.monlamit.com">Monlam IT</a></p>
+</html>
